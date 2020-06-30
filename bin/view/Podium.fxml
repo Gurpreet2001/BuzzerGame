@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="848.0" prefWidth="997.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PodiumController">
+   <center>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="635.0" prefWidth="828.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="VBoxPlace2" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="lblPlace2Name">
+                     <font>
+                        <Font name="Arial" size="29.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <AnchorPane>
+                     <VBox.margin>
+                        <Insets bottom="100.0" />
+                     </VBox.margin>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+                           <fill>
+                              <LinearGradient endX="0.4476190476190475" startX="1.0">
+                                 <stops>
+                                    <Stop color="#9235da" />
+                                    <Stop color="#8f10318f" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Label fx:id="lblPlace2Score" alignment="CENTER" text="4000" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial" size="29.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" top="100.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="VBoxPlace1" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="lblPlace1Name">
+                     <font>
+                        <Font name="Arial" size="29.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <AnchorPane>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="300.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+                           <fill>
+                              <LinearGradient endX="0.4476190476190475" startX="1.0">
+                                 <stops>
+                                    <Stop color="#9235da" />
+                                    <Stop color="#8f10318f" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Label fx:id="lblPlace1Score" alignment="CENTER" text="5000" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial" size="29.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="200.0" left="50.0" right="50.0" top="100.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="VBoxPlace3" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="lblPlace3Name">
+                     <font>
+                        <Font name="Arial" size="29.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <AnchorPane>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+                           <fill>
+                              <LinearGradient endX="0.4476190476190475" startX="1.0">
+                                 <stops>
+                                    <Stop color="#9235da" />
+                                    <Stop color="#8f10318f" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Label fx:id="lblPlace3Score" alignment="CENTER" text="2500" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial" size="29.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" top="100.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="          Podium          " underline="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial" size="91.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
