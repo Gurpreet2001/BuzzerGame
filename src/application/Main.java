@@ -24,10 +24,12 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../view/StartScreen.fxml"));
 			Scene scene = new Scene(loader.load());
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setScene(scene);
-			primaryStage.show();
 			StartScreenController controller = loader.getController();
-			controller.setStage(primaryStage);			
+			controller.setStage(primaryStage);
+			primaryStage.setScene(scene);
+			primaryStage.setFullScreen(true);
+			primaryStage.show();
+			
 			
 			
 		} catch(Exception e) {

@@ -39,7 +39,7 @@ public class QuestionController{
 	@FXML
 	private Label lblRound;
 	
-	private final static int TIMEOUT = 150;
+	private final static int TIMEOUT = 20;
 	private final static int ROUNDS = 5;
 	
 	private ArrayList<Frage> fragen;
@@ -99,8 +99,6 @@ public class QuestionController{
 	}
 	
 	public void onPlayerReturn(Player p, int value) {
-		
-		System.out.println("Player ID: " + p.getPlayerID() + " || Value: " + value + " || Antwort: " + currentFrage.getAntwort());
 		p.antwort().set(value);
         if(value == currentFrage.getAntwort()) {
         	p.addScore(restzeit.get() * 50);
@@ -184,6 +182,7 @@ public class QuestionController{
 			scoreBoardController.setPlayers(players);
 			scoreBoardController.setRound(round);
 			scoreBoardController.init();
+			stage.setFullScreen(true);
 			stage.setScene(scoreBoardScene);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -210,10 +209,6 @@ public class QuestionController{
 		lblA1.setText(currentFrage.getAntworten().get(0));
 		lblA2.setText(currentFrage.getAntworten().get(1));
 		lblA3.setText(currentFrage.getAntworten().get(2));
-		
-		for(int i : usedQuestions) {
-			System.out.println(fragen.get(i).getFrage());
-		}
 	}
 
 	public void setRound(int round) {

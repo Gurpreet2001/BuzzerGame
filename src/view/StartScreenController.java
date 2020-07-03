@@ -76,9 +76,6 @@ public class StartScreenController {
 				imgPlayer3NR.setVisible(false);
 			}
 		}
-		for(Player p : players) {
-			System.out.println("Player: " + p.getPlayerID());
-		}
 	}
 
 	public void setStage(Stage stage) {
@@ -95,7 +92,7 @@ public class StartScreenController {
 			questionController.setPlayers(players);
 			questionController.setStage(stage);
 			questionController.init();
-			
+			stage.setFullScreen(true);			
 			stage.setScene(questionScene);
 			
 		
